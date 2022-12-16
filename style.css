@@ -1,0 +1,98 @@
+html, body {
+    margin: 1rem 1rem;
+    padding: 0;
+    background-color: blanchedalmond;
+}
+  
+header {
+    text-align: center;
+    color: rgb(130, 66, 17);
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%; 
+    background-color: rgba(220, 134, 14, 0.755);
+}
+
+.addButton {
+  background-color: rgb(93, 35, 2);
+  color: white;
+  border-radius: 5px;
+}
+
+.priceTag {
+    font-weight: bold;
+    color: rgb(93, 35, 2);
+}
+ 
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    align-content: center;
+}
+
+#footer {
+    background-color:  rgba(220, 134, 14, 0.755);
+    text-align: center;
+    font-weight: bold;
+    height: 2rem; 
+}
+
+#shopCart{
+    font: 1rem;
+    text-transform: uppercase;
+    color: rgb(130, 66, 17);
+}
+
+#shopCartImg{
+    height: auto;
+    width: 3rem;
+    align-self: center;
+}
+
+div#shopCartDiv.flex-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+
+.image {
+    height: auto;
+    width: 250px;
+    margin: auto 1rem;
+}
+
+.image:hover {
+    height: auto;
+    width: 300px;
+    box-shadow: grey 0.5rem 0.5rem;
+}
+
+.image_tiny {
+    height: 2rem;
+    width: 2rem;
+}
+
+p.errorQuant {
+    visibility: visible;
+    color: red; 
+}
+
+#removeBtn {
+    color: white;
+    background-color: rgb(237, 52, 52);
+    border-color: rgb(138, 13, 13) ;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }

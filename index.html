@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Teddy Shop</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="style.css" rel='stylesheet' type='text/css'/>
+  </head>
+
+  <body>
+    <header>
+        <h1>Love Teddies? Bear with Us!</h1>
+    </header>
+   
+    <div class="flex-container">
+      <div>
+        <img class="image" src="teddy_small.jpg">
+        <h2>Small Teddy, 20cm</h2>
+        <p class="priceTag">$ <span id="smTeddyPrice">5</span>.00 each</p>
+        <input type="number" class="enter_quant1" placeholder="Enter Quantity">
+        <p class="errorQuant">Enter 1 or more</p>
+        <button class="addButton" type="button">Add to Cart</button>
+    
+      </div>
+    
+      <div>
+        <img class="image" src="teddy_big.jpg">
+        <h2>Large Teddy, 100cm</h2>
+        <p class="priceTag">$ <span id="lgTeddyPrice">60</span>.00 each</p>
+        <input type="number" class="enter_quant" placeholder="Enter Quantity">
+        <p class="errorQuant">Enter 1 or more</p>
+        <button class="addButton" type="button">Add to Cart</button>
+    
+      </div>
+    
+      <div>
+        <img class="image" src="teddy_giant.jpg">
+        <h2>Giant Teddy, 180 cm</h2>
+        <p class="priceTag">$ <span id="gntTeddyPrice">100</span>.00 each</p>
+        <input type="number" class="enter_quant" placeholder="Enter Quantity">
+        <p class="errorQuant">Enter 1 or more</p>
+        <button class="addButton" type="button">Add to Cart</button>
+    
+      </div>
+    
+    </div>
+
+    <div id="shopCartDiv" class="flex-container">
+        <p id="shopCart">Your Shopping Cart</p><image id="shopCartImg" src="shopCartImg.png"><br>
+        
+         <table style="border:#a5742acf" border="1">
+            <tr>
+                <td>Item</td>
+                <td>Quantity</td>
+                <td>Price per Item</td>
+                <td>Total</td>
+                <td>Action</td>
+            </tr>
+            <tr>
+                <td><img class="image_tiny" src="teddy_small.jpg"></td>
+                <td><input id="quant_entered1"></input></td>
+                <td><input ></input></td>
+                <td><input ></input></td>
+                <td><button id="removeBtn" type="button">Remove</button></td>
+            </tr>
+            <tr>
+                <td><img class="image_tiny" src="teddy_big.jpg"></td>
+                <td><input id="quant_entered"></input></td>
+                <td><input ></input></td>
+                <td><input ></input></td>
+                <td><button id="removeBtn" type="button">Remove</button></td>
+            </tr>
+            <tr>
+                <td><img class="image_tiny" src="teddy_giant.jpg"></td>
+                <td><input id="quant_entered"></input></td>
+                <td><input ></input></td>
+                <td><input ></input></td>
+                <td><button id="removeBtn" type="button">Remove</button></td>
+            </tr>
+         </table>
+         <h3>Your Total Order: $<span id="totalAmount"></span>.00</h3>
+        
+
+    </div>
+  
+    
+    
+   <script src="script.js"></script>
+  </body>
+  <footer id="footer">
+    <p>&copy; Maria M, 2022</p>
+  </footer>
+</html>
